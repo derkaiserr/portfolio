@@ -9,27 +9,48 @@ import './App.css'
 
 function App() {
 
-    const childRef = useRef(null);
+    const projRef = useRef(null);
+    const aboutRef = useRef(null);
+    const homeRef = useRef(null);
   
     const scrollToTarget = () => {
-      if (childRef.current) {
-        childRef.current.scrollIntoView({ behavior: 'smooth' });
+      if (projRef.current) {
+        projRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+   
+      console.log('scrollToTarget')
+    };
+    const scrollToTargett = () => {
+    
+      if (aboutRef.current) {
+        aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+      
       }
       console.log('scrollToTarget')
     };
+    const scrollToTargettt = () => {
+    
+      if (homeRef.current) {
+        homeRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+      console.log('scrollToTarget')
+    };
+
     
   
 
-    const navs =['Home', 'Projects','About' ]
+    const navs =[{name:'Home', function: scrollToTargettt},
+    {name:'Projects', function: scrollToTarget},
+    {name:'About', function: scrollToTargett}]
 
 
   return (
     <div className='mx-16 mt-[1.4rem] mb-3 inter'>
-<Header navs={navs} />
-<Intro scrollToTarget={scrollToTarget} />
-<HomeProjects ref={childRef}/>
+<Header  navs={navs} />
+<Intro ref={homeRef}  scrollToTarget={scrollToTarget} />
+<HomeProjects ref={projRef}/>
 <Skills />
-<About />
+<About ref={aboutRef} />
 <Footer navs={navs} />
     </div>
   )

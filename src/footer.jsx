@@ -13,7 +13,7 @@ export default function Footer ({navs}){
 
             <div className="nav font-bold flex gap-[2rem]">
             {navs.map((nav, index)=> 
-                    <p key={index}>{nav}</p>
+                    <p className="hover:text-[#6c06f2] cursor-pointer" onClick={nav.function} key={index}>{nav.name}</p>
                 )}
             </div>
             <div className="text-l flex gap-[0.5rem]">

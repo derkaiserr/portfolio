@@ -3,10 +3,10 @@ import Me from "./assets/me.png"
 
 
 
-export default function Intro({scrollToTarget}){
+const Intro = React.forwardRef(({scrollToTarget}, ref) =>{
     return(
-        <div className="flex tracking-[-0.1rem] items-center  justify-between gap-[9rem] mt-[10rem]">
-            <div className="py-8 text-gray-600 w-[85%] leading-[2.5rem] text-2xl">
+        <div ref={ref} className="flex break-words tracking-[-0.1rem] gap-9 text-wrap mt-[10rem]">
+            <div className="py-8  text-gray-600 w- leading-[2.5rem] text-2xl">
               <p>Hey, I'm Adeola👋🏽</p>  
               <p className="font-extrabold text-black text-[5.5rem] leading-[5.5rem] my-3"> <span className=" text-[#6e06f2] "> Front</span>end Developer</p>
               <p className="tracking-tight">I'm a frontend developer based in Nigeria, I'll help you build beautiful websites your users will love.</p>
@@ -16,9 +16,11 @@ export default function Intro({scrollToTarget}){
               </div>
             </div>
 
-            <div className="p-[2.6rem] border-[#6c06f25e] border rounded-full">
-        <img className="rounded-[400px] h-[22rem]" src={Me}  width="550rem"  alt="me" />
+            <div className=" border-[#6c06f25e] items-center justify-center border flex h-[30rem] min-w-[30rem] w-[30rem] rounded-[40rem]">
+        <img className=" object-fil rounded-full h-[24rem] w-[24rem] " src={Me}    alt="me" />
             </div>
         </div>
     )
-}
+})
+
+export default Intro

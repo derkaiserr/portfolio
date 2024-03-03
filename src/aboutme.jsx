@@ -1,11 +1,10 @@
 import React from "react";
 
 
-
-export default function AboutMe (){
+const AboutMe = React.forwardRef((props, ref) =>{
     return(
-        <div>
-            <div className="text-6xl font-bold mb-6 break-words">About Me<span className="text-[#6c06f2]">.</span></div>
+        <div ref={ref}>
+            <div  className="text-6xl font-bold mb-6 break-words">About Me<span className="text-[#6c06f2]">.</span></div>
 
             <div>
             My journey in web development started in 2022 when i finally got the basic <span>resources</span> to learn and stay <span>focused</span>. I'm a <span>passionate</span> front-end developer who brings beautiful and functional websites to life. With a knack for turning <span>ideas</span> into reality through code, I thrive on creating delightful user <span>experiences</span>.
@@ -19,4 +18,6 @@ export default function AboutMe (){
             </div>
         </div>
     )
-}
+})
+
+export default AboutMe
