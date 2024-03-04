@@ -16,9 +16,7 @@ const Intro = React.forwardRef(({scrollToTarget}, ref) =>{
               </div>
             </div>
 
-            <div className=" border-[#6c06f25e] items-center mx-auto justify-center border flex h-[30rem] max-md:h-[20rem] max-md:w-[20rem]  w-[30rem] rounded-[40rem]">
-        <img className=" object-fil rounded-full h-[24rem] w-[24rem]   max-md:h-[15.5rem] max-md:w-[15.5rem] " src={Me}    alt="me" />
-            </div>
+            
         </div>
     )
 })
