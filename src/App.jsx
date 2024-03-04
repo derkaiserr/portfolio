@@ -45,7 +45,7 @@ function App() {
 
 
   return (
-    <div className='mx-16 mt-[1.4rem] mb-3 inter'>
+    <div className='mx-16 max-md:mx-5 mt-[1.4rem] mb-3 inter'>
 <Header  navs={navs} />
 <Intro ref={homeRef}  scrollToTarget={scrollToTarget} />
 <HomeProjects ref={projRef}/>

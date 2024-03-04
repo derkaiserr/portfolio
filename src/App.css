@@ -29,9 +29,8 @@
   font-style: normal;
 }
 
-.poppins-regular {
+.poppins {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -79,6 +78,7 @@ span{
 }
 
 
+
 .hoverImg{
   margin-bottom: 2rem;
   transition: all 0.15s ease-in-out;
@@ -86,4 +86,48 @@ span{
 
 .hoverImg:hover{
   transform: scale(1.02);
+}
+
+
+.hams{
+  width: 24px;
+  height: 24px;
+  padding: auto;
+  position: relative;
+  transition: all 0.25s;
+  cursor: pointer;
+  display: block;
+}
+.ham-top,
+.ham-mid,
+.ham-bottom{
+  position: absolute;
+  background-color: #000;
+  width: 24px;
+  height: 2px;
+  transition: all 0.3s;
+  cursor: pointer;
+  
+}
+.ham-mid{
+  margin-top: 7px;
+  transition: all 0.4s ease;
+  transform: scale(1) rotate(0deg);
+
+}
+.ham-bottom{
+  margin-top: 14px;
+}
+
+
+
+.ham-top1{
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.ham-bottom1{
+  transform: rotate(-45deg) translate(3px, -3px);
+
+}
+.hidden{
+  transform: scale(0) rotate(45deg) translateX(2px) translateY(2px);
 }

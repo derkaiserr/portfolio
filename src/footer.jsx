@@ -9,9 +9,9 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 export default function Footer ({navs}){
     return(
         <div className="mt-[4rem]">
-            <div className="flex justify-between">
+            <div className="flex justify-between max-md:justify-end">
 
-            <div className="nav font-bold flex gap-[2rem]">
+            <div className="nav max-md:hidden font-bold flex gap-[2rem]">
             {navs.map((nav, index)=> 
                     <p className="hover:text-[#6c06f2] cursor-pointer" onClick={nav.function} key={index}>{nav.name}</p>
                 )}

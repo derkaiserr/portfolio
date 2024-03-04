@@ -13,8 +13,8 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 const HomeProjects =React.forwardRef((props, ref) => {
     return(
         <div ref={ref} className="mt-[4rem]">
-            <div className="text-6xl mb-16 tracking-tight font-bold">Projects<span className="text-[#6c06f2]">.</span></div>
-            <div className="grid-cols-2 grid gap-12">
+            <div className="text-6xl max-md:text-5xl max-md:mb-10 mb-16 tracking-tight font-bold">Projects<span className="text-[#6c06f2]">.</span></div>
+            <div className="grid-cols-2 max-md:flex-col max-md:flex grid max-md:gap-20 gap-12">
                 <div className="">
             <img src={Todo} className="mx-auto rounded-xl h-[29rem] hoverImg" width="270rem" alt="" />
             <div>

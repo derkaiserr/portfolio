@@ -9,7 +9,7 @@ import Html from "./assets/html.png"
 export default function Skills (){
     return(
     <div className="text-gray-600 mb-[3rem]">
-            <div className="text-6xl text-black mt-[3rem] mb-6 font-bold ">Skills<span className="text-[#6c06f2]">.</span></div>
+            <div className="text-6xl max-md:text-5xl text-black mt-[3rem] mb-6 font-bold max-md:mb-9 ">Skills<span className="text-[#6c06f2]">.</span></div>
       <div className="flex flex-wrap gap-20 justify-around items-baseline leading-[3rem] text-center">
         <div>
             <img src={JS} width="80rem" alt="" />
