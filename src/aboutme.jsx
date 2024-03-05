@@ -1,5 +1,6 @@
 import React from "react";
-
+import CV from "./assets/Resume.pdf"
+import downloadIcon from "./assets/download.png"
 
 const AboutMe = React.forwardRef((props, ref) =>{
     return(
@@ -16,6 +17,9 @@ const AboutMe = React.forwardRef((props, ref) =>{
             </ul>
 
             </div>
+
+            {/* <a href={CV} className="hover bg-black hover:bg-[rgb(50,50,50)] py-4 w-[20rem]  px-6 text-white " download="Resume.pdf"><button id="" className="mt-6 inline max-md:h-11" > CV<img className="w-10" src={downloadIcon} alt="" /></button></a> */}
+            <a href={CV} download="Resume.pdf" className="bg-black flex gap-2 items-center py-2 text-[16px] px-5 font-bold mt-7 w-fit rounded-lg text-white tracking-wider" >CV<img className="w-4" src={downloadIcon} alt="" /></a>
         </div>
     )
 })

@@ -1,4 +1,7 @@
 import React,{useState, useEffect} from "react";
+import chatIcon from "./assets/chat.svg"
+
+
 
 
 export default function Header ({navs}){
@@ -39,17 +42,17 @@ export default function Header ({navs}){
            <div className={isToggle ? 'ham-mid hidden' :'ham-mid'}></div>
         <div className={isToggle ? 'ham-bottom ham-bottom1' :'ham-bottom'}></div>
                 </div>
-        <div className="header flex max-md:flex-col    font-bold justify-between">
+        <div className="header flex max-md:flex-col   font-bold justify-between">
             <div className="max-md:fixed max-md:top-0 z-40 max-md:text-2xl text-xl poppins max-md:py-4 max-md:bg-gray-100 max-md:left-0 max-md:pl-4 max-md:w-[60%] ">Kaiser<span className="text-[#6c06f2]">Folio</span></div>
 
-            <div className={` nav max-md:duration-300 max-md:transition-all max-md:-mt-[10rem] ${isToggle ? "max-md:mt-[4rem]" : ""} max-md:ease-in    max-md:flex-col flex gap-[2rem]`}>
+            <div className={` nav max-md:duration-300 max-md:fixed max-md:transition-all max-md:pt-10  max-md:py-6 max-md:pb-24 max-md:bg-white z-30 max-md:w-[100%] ${isToggle ? "translate-y-[-6rem]" : "max-md:mt-0 translate-y-[-24rem]"} max-md:ease-in    max-md:flex-col flex gap-[2rem]`}>
 
                 {navs.map((nav, index)=> 
-                    <p className="hover:text-[#6c06f2] cursor-pointer" onClick={nav.function} key={index}>{nav.name}</p>
+                    <p className="hover:text-[#6c06f2] text-gray-700 cursor-pointer" onClick={nav.function} key={index}>{nav.name}</p>
                     )}
               
             </div>
-            <div className="max-md:mt-7">icon</div>
+            <a href="mailto:oluadebojnr@gmail.com" className={`max-md:fixed  ${isToggle ? "max-md:mt-[6.8rem]" : "max-md:mt-[-20rem]"} transition-all z-30 duration-300 ease-in  hoverImg  bg-gray-800 hoverIm p-2 rounded-full box-content w-fit`}>  <img src={chatIcon} alt="" /> </a>
                     </div>
         </div>
     )

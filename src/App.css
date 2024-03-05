@@ -84,9 +84,13 @@ span{
   transition: all 0.15s ease-in-out;
 }
 
-.hoverImg:hover{
+.hover{
+  transition: all 0.15s ease-in-out;
+}
+.hoverImg:hover , .hover:hover{
   transform: scale(1.02);
 }
+
 
 
 .hams{
