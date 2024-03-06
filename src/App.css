@@ -135,3 +135,31 @@ span{
 .hidden{
   transform: scale(0) rotate(45deg) translateX(2px) translateY(2px);
 }
+
+
+@media only screen and (max-width: 767px) {
+  
+  
+  .pullDown{
+    transform: translateY(1.5rem);
+  }
+  .nav{
+  transition: all 0.3s ease-in ;
+  
+}
+
+.pushUp{
+  
+  transform: translateY(-23rem);
+}
+
+.chatUp{
+  transform: translateY(-23rem);
+  
+}
+
+.chatDown{
+  transform: translateY(14.5rem);
+}
+
+}
