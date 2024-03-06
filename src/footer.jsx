@@ -19,9 +19,9 @@ export default function Footer ({navs}){
             </div>
                     
             <div className="text-l flex gap-[0.5rem]">
-                <a target="_blank" className="text-xl" href="https://github.com/derkaiserr"><FontAwesomeIcon icon={faGithub} /></a>
-            <a target="_blank" className="text-xl" href="https://linkedin.com/in/adeola-adebowale"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-            <a target="_blank" className="text-xl" href="https://x.com/manyfacedG"><FontAwesomeIcon icon={faTwitter} /></a>
+                <a target="_blank" className="hover:text-[#6c06f2] hover text-xl" href="https://github.com/derkaiserr"><FontAwesomeIcon icon={faGithub} /></a>
+            <a target="_blank" className="hover:text-[#6c06f2] hover text-xl" href="https://linkedin.com/in/adeola-adebowale"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+            <a target="_blank" className="hover:text-[#6c06f2] hover text-xl" href="https://x.com/manyfacedG"><FontAwesomeIcon icon={faTwitter} /></a>
             </div>
             </div>
         </div>
