@@ -9,7 +9,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer ({navs}){
     return(
-        <div className="mt-[4rem] text-gray-700">
+        <footer className="mt-[4rem] text-gray-700">
             <div className="flex justify-between items-center max-md:justify-end">
 
             <div className="nav max-md:hidden font-bold flex gap-[2rem]">
@@ -24,6 +24,6 @@ export default function Footer ({navs}){
             <a target="_blank" className="hover:text-[#6c06f2] hover text-xl" href="https://x.com/manyfacedG"><FontAwesomeIcon icon={faTwitter} /></a>
             </div>
             </div>
-        </div>
+        </footer>
     )
 }

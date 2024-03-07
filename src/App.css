@@ -96,13 +96,14 @@ span{
 
 
 .hams{
-  width: 24px;
+  width: 34px;
   height: 24px;
   padding: auto;
   position: relative;
   transition: all 0.25s;
   cursor: pointer;
   display: block;
+  
 }
 .ham-top,
 .ham-mid,
@@ -138,6 +139,11 @@ span{
   transform: scale(0) rotate(45deg) translateX(2px) translateY(2px);
 }
 
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
+}
 
 @media only screen and (max-width: 767px) {
   

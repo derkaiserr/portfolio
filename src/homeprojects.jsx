@@ -12,7 +12,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 const HomeProjects =React.forwardRef((props, ref) => {
     return(
-        <div ref={ref} className="mt-[4rem]">
+        <div ref={ref} className="pt-[4rem] md:pt-0 md:mt-4">
             <div className="text-6xl max-md:text-5xl max-md:mb-10 mb-16 tracking-tight font-bold">Projects<span className="text-[#6c06f2]">.</span></div>
             <div className="grid-cols-2 max-md:flex-col items-end max-md:flex grid max-md:gap-20 gap-12">
                 <a className=" hoverImg " href="https://todoapp-derkaiser.netlify.app" target="_blank">

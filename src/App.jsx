@@ -13,45 +13,45 @@ function App() {
     const aboutRef = useRef(null);
     const homeRef = useRef(null);
   
-    const scrollToTarget = () => {
+    const scrollToProject = () => {
       if (projRef.current) {
         projRef.current.scrollIntoView({ behavior: 'smooth' });
       }
    
-      console.log('scrollToTarget')
     };
-    const scrollToTargett = () => {
+    const scrollToAbout = () => {
     
       if (aboutRef.current) {
         aboutRef.current.scrollIntoView({ behavior: 'smooth' });
       
       }
-      console.log('scrollToTarget')
     };
-    const scrollToTargettt = () => {
+    const scrollToHome = () => {
     
       if (homeRef.current) {
         homeRef.current.scrollIntoView({ behavior: 'smooth' });
       }
-      console.log('scrollToTarget')
     };
 
     
   
 
-    const navs =[{name:'Home', function: scrollToTargettt},
-    {name:'Projects', function: scrollToTarget},
-    {name:'About', function: scrollToTargett}]
+    const navs =[{name:'Home', function: scrollToHome},
+    {name:'Projects', function: scrollToProject},
+    {name:'About', function: scrollToAbout}]
 
 
   return (
-    <div className='mx-16 max-md:mx-5 mt-[1.4rem] mb-3 inter'>
+    <div className=' inter'>
 <Header  navs={navs} />
-<Intro ref={homeRef}  scrollToTarget={scrollToTarget} />
+<div className='mx-5 md:mx-12 '>
+
+<Intro ref={homeRef}  scrollToTarget={scrollToProject} />
 <HomeProjects ref={projRef}/>
 <Skills />
 <About ref={aboutRef} />
 <Footer navs={navs} />
+</div>
     </div>
   )
 }
