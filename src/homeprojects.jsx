@@ -3,7 +3,7 @@ import Todo from "./assets/todoapp.jpg";
 import Iptracker from "./assets/iptracker.png";
 import Atoms from "./assets/atoms.png";
 import Payment from "./assets/payment.png";
-import kfin from "./Images/kfin.png";
+import kfin from "./assets/kfin.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
