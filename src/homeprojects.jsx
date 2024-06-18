@@ -3,6 +3,7 @@ import Todo from "./assets/todoapp.jpg";
 import Iptracker from "./assets/iptracker.png";
 import Atoms from "./assets/atoms.png";
 import Payment from "./assets/payment.png";
+import kfin from "./Images/kfin.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -18,9 +19,9 @@ const HomeProjects = React.forwardRef((props, ref) => {
       github: "https://github.com/derkaiserr/todoApp",
     },
     {
-      img: "../src/assets/kfin.png",
-      title: "KaiserFinance",
-      desc: "A finance management webapp designed to help users manage their income and expenses efficiently. ",
+      img: kfin,
+      title: "KaiserFinance(mobile)",
+      desc: "A finance management mobile-only web-app designed to help users manage their income and expenses efficiently. ",
       link: "https://kaiserfinance.netlify.app/",
       width: "270rem",
       github: "https://github.com/derkaiserr/kaiserfinance",
