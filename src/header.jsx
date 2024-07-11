@@ -54,11 +54,11 @@ const handlePropagation = (e) => {
         ))}
         <li
           className={
-            "  transition-all md:absolute md:right-0 z-30 duration-300 ease-in  hover  bg-gray-800 p-2 rounded-full box-content w-fit"
+            "  transition-all md:absolute md:right-0 z-30 duration-300 ease-in  hover   flex items-center bg-gray-800 rounded-full w-fit"
           }
         >
-          <a href="mailto:oluadebojnr@gmail.com">
-          <img src={chatIcon} alt="chatIcon" />
+          <a className=" p-2"  href="mailto:oluadebojnr@gmail.com">
+          <img src={chatIcon} className="w-8 h-8" alt="chatIcon" />
           </a>
         </li>
       </ul>

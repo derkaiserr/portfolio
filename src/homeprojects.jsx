@@ -73,8 +73,14 @@ const HomeProjects = React.forwardRef((props, ref) => {
                 width={item.width}
                 alt=""
               />
-              <a
-                className="float-right text-[#6c06f2] hover:scale-125 transition-all ease-in-out "
+             
+              <div>
+                <div className="font-bold text-2xl md:text-xl sm:text-lg flex justify-between flex-wrap  items-end">
+                 <p>{item.title}</p>{" "}
+                  
+                  <div className="ml-2 text-xl flex items-center  text-[#6c06f2]">
+                  <a
+                className=" text-[#6c06f2] hover:scale-125 transition-all ease-in-out "
                 target="_blank"
                 href={item.github}
               >
@@ -94,13 +100,9 @@ const HomeProjects = React.forwardRef((props, ref) => {
                   <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
               </a>
-              <div>
-                <p className="font-bold text-2xl">
-                  {item.title}{" "}
-                  <span className="ml-2 text-xl text-[#6c06f2]">
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                  </span>
-                </p>
+                  </div>
+                </div>
                 <p className="text-[17px] font-medium text-gray-600">
                   {item.desc}
                 </p>
