@@ -53,12 +53,13 @@ const handlePropagation = (e) => {
           </li>
         ))}
         <li
-          href="mailto:oluadebojnr@gmail.com"
           className={
             "  transition-all md:absolute md:right-0 z-30 duration-300 ease-in  hover  bg-gray-800 p-2 rounded-full box-content w-fit"
           }
         >
+          <a href="mailto:oluadebojnr@gmail.com">
           <img src={chatIcon} alt="chatIcon" />
+          </a>
         </li>
       </ul>
     </header>
