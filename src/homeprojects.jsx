@@ -4,6 +4,7 @@ import Iptracker from "./assets/iptracker.png";
 import Atoms from "./assets/atoms.png";
 import Payment from "./assets/payment.png";
 import kfin from "./assets/finance.png";
+import kanban from "./assets/Kanban.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -49,6 +50,14 @@ const HomeProjects = React.forwardRef((props, ref) => {
       desc: "A beautifully designed payment platform for transactions after purchase.",
       link: "https://derkaiserr.github.io/frontEndMentorChallenge1",
       github: "https://github.com/derkaiserr/frontEndMentorChallenge1",
+    },
+    {
+      img: kanban,
+      width: "",
+      title: "Kanban Board",
+      desc: "A task management system equipped with a drag and drop feature.",
+      link: "https://kanban-board-psi-eight.vercel.app/",
+      github: "https://github.com/derkaiserr/kanban-board",
     },
   ];
 

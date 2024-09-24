@@ -5,39 +5,39 @@ import Firebase from "./assets/Firebase.png"
 import Css from "./assets/css.png"
 import tailwind from "./assets/tailwind.png"
 import Html from "./assets/html.png"
+import Vue from "./assets/vue.png"
+import Nuxt from "./assets/nuxt.png"
+import Next from "./assets/nextjs.png"
+import sqlite from "./assets/sqlite.jfif"
 
 export default function Skills (){
+
+    const skills = [
+        {name: "Html", img: Html, width: "80rem"},
+        {name: "CSS", img: Css, width: "80rem"},
+        {name: "JavaScript", img: JS, width: "80rem"},
+        {name: "Firebase", img: Firebase, width: "90rem"},
+        {name: "ReactJS", img: ReactJS, width: "90rem"},
+        {name: "NextJS", img: Next, width: "90rem"},
+        {name: "Tailwind", img: tailwind, width: "120rem"},
+        {name: "Vue", img: Vue, width: "90rem"},
+        {name: "Nuxt", img: Nuxt, width: "90rem"},
+        {name: "SQLite", img: sqlite, width: "90rem"},
+        
+    ]
     return(
     <div className="text-gray-600 mb-[3rem]">
             <div className="text-6xl max-md:text-5xl text-black mt-[3rem] mb-6 font-bold max-md:mb-9 ">Skills<span className="text-[#6c06f2]">.</span></div>
-      <div className="flex flex-wrap gap-20 justify-around items-baseline leading-[3rem] text-center">
-        <div>
-            <img src={JS} width="80rem" alt="" />
-            <p className=" font-medium">JavaScript</p>
-        </div>
-        <div>
-            <img src={ReactJS} width="90rem" alt="" />
-            <p className="font-medium">ReactJs</p>
-        </div>
-        <div>
-            <img src={Firebase} width="90rem" alt="" />
-        <p className="font-medium">Firebase</p>   
-        </div>
+      <div className="grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3 gap-20 justify-center  items-baseline leading-[3rem] text-center">
+      
+        {skills.map((skill, index)=>(
 
-        <div>
-            <img src={Css} width="80rem" alt="" />
-            <p className="font-medium">CSS</p>
+            <div className="flex flex-col items-center" key={index}>
+            <img src={skill.img} width={skill.width} alt={skill.name} />
+            <p className=" font-medium">{skill.name}</p>
         </div>
-        
-        <div>
-            <img src={tailwind} width="120rem" alt="" />
-            <p className="font-medium">Tailwind</p>
-        </div>
-
-        <div>
-            <img src={Html} width="80rem" alt="" />
-            <p className="font-medium">HTML</p>
-        </div>
+        ))}
+       
 
 
             </div>
