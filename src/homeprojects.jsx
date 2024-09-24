@@ -56,7 +56,7 @@ const HomeProjects = React.forwardRef((props, ref) => {
       width: "",
       title: "Kanban Board",
       desc: "A task management system equipped with a drag and drop feature.",
-      link: "https://kanban-board-psi-eight.vercel.app/",
+      link: "https://kanban-kaiser.netlify.app",
       github: "https://github.com/derkaiserr/kanban-board",
     },
   ];
